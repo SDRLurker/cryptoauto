@@ -1,1 +1,3 @@
 pyupbit
+openpyxl
+requests
