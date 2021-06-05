@@ -150,3 +150,76 @@ pip install pyupbit
 #### [25:42](https://www.youtube.com/watch?v=5vofEMqMyGk&t=1542s)​ 실제 거래내역 공개
 
 #### [26:16](https://www.youtube.com/watch?v=5vofEMqMyGk&t=1576s)​ 구독, 좋아요, 알림설정 부탁드립니다
+
+# 하락장 맞춘 인공지능 가격 예측기 만들고 자동매매와 연결하기
+
+## 목차
+
+* 주소 : https://www.youtube.com/watch?v=Teju_e9TI3s
+
+#### [00:00](https://www.youtube.com/watch?v=Teju_e9TI3s?t=0s) 미리보기
+
+#### [00:05](https://www.youtube.com/watch?v=Teju_e9TI3s?t=5s) 인트로
+
+#### [00:24](https://www.youtube.com/watch?v=Teju_e9TI3s?t=24s) 이전 영상 소개
+
+#### [00:32](https://www.youtube.com/watch?v=Teju_e9TI3s?t=32s) 이번 시간 목차
+1. 인공지능 가격 예측 개념 소개
+2. 인공지능 비트코인 가격 예측
+3. 자동매매에 적용하기
+
+#### [00:52](https://www.youtube.com/watch?v=Teju_e9TI3s&t=52s) 경고
+
+```
+인공지능 예측은 그냥 보조 수단일 뿐
+반드시 맞는 것은 절대 아닙니다.
+맹신하고 투자하다 큰 손실이
+발생할 수 있으니 꼭 주의하세요!
+```
+
+> 투자의 책임은 투자자 본인에게 있습니다.
+
+#### [01:10](https://www.youtube.com/watch?v=Teju_e9TI3s&t=70s) 인공지능 개념
+
+* https://www.youtube.com/watch?v=USQGTW34lO8 참고
+
+#### [01:26](https://www.youtube.com/watch?v=Teju_e9TI3s&t=86s) 인공지능 가격 예측 방법
+
+* 과거 데이터 -> 학습 -> 모델
+* 내일 가격은 -> 모델 -> 7000만원
+
+#### [01:54](https://www.youtube.com/watch?v=Teju_e9TI3s&t=114s) 시계열 데이터 예측 라이브러리 prophet 소개
+
+* Facebook에서 만든 시계열 분석/예측 라이브러리
+
+#### [02:22](https://www.youtube.com/watch?v=Teju_e9TI3s&t=142s) 인공지능 비트코인 가격 예측
+
+#### [02:27](https://www.youtube.com/watch?v=Teju_e9TI3s&t=147s) 구글 colab 소개 및 환경 설정
+
+#### [04:00](https://www.youtube.com/watch?v=Teju_e9TI3s&t=240s) 완성 코드 설명
+* 다음 코드 참고
+  - https://github.com/youtube-jocoding/pyupbit-autotrade/blob/main/BTC_predict.ipynb
+
+#### [07:06](https://www.youtube.com/watch?v=Teju_e9TI3s&t=426s) 예측 그래프 출력
+
+#### [08:02](https://www.youtube.com/watch?v=Teju_e9TI3s&t=482s) 비트코인 가격 트렌드
+
+#### [09:07](https://www.youtube.com/watch?v=Teju_e9TI3s&t=547s) 자동매매에 인공지능 적용하기
+
+#### [14:21](https://www.youtube.com/watch?v=Teju_e9TI3s&t=861s) 인공지능 자동매매 환경 설정(Windows/Mac)
+
+#### [16:59](https://www.youtube.com/watch?v=Teju_e9TI3s&t=1019s) 인공지능 자동매매 코드 설명
+
+#### [18:17](https://www.youtube.com/watch?v=Teju_e9TI3s&t=1097s) 인공지능 자동매매 환경 설정(Ubuntu)
+
+* 4GB이상 RAM 필요 (AWS t2.medium 이상)
+* sudo apt update
+* sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
+* sudo apt install python3-pip
+* pip3 install pyupbit
+* pip3 install schedule
+* pip3 install pystan==2.19.1.1
+* pip3 install convertdate
+* pip3 install fbprophet
+
+#### [19:59](https://www.youtube.com/watch?v=Teju_e9TI3s&t=1199s) 아웃트로

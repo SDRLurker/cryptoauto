@@ -4,7 +4,7 @@ import time
 import sys
 
 def get_ror(symb, k=0.5):
-    df = pyupbit.get_ohlcv(symb, count=3)
+    df = pyupbit.get_ohlcv(symb, count=30)
     df['range'] = (df['high'] - df['low']) * k
     df['target'] = df['open'] + df['range'].shift(1)
 
