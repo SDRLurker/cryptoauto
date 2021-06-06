@@ -2,6 +2,7 @@ import time
 import pyupbit
 import datetime
 import config
+import sys
 import schedule
 from fbprophet import Prophet
 
@@ -51,7 +52,7 @@ def predict_price(ticker):
         closeDf = forecast[forecast['ds'] == data.iloc[-1]['ds'].replace(hour=9)]
     closeValue = closeDf['yhat'].values[0]
     predicted_close_price = closeValue
-    print("pridicted_close_price = %.2f" % predicted_close_price)
+    print("[%s] predicted_close_price = %.2f" % (datetime.datetime.now(), predicted_close_price))
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
