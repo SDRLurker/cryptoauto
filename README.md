@@ -223,3 +223,10 @@ pip install pyupbit
 * pip3 install fbprophet
 
 #### [19:59](https://www.youtube.com/watch?v=Teju_e9TI3s&t=1199s) 아웃트로
+
+
+## 의존성 관리
+
+```shell
+~/p2pcbot]$ pip install -r requirements.txt
+```
